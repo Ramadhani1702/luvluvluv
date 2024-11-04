@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gombalan Romantis</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+        text-align: center;
+        padding: 50px;
+      }
+      h1 {
+        color: #ff69b4;
+      }
+      .gombal {
+        font-size: 24px;
+        margin: 20px 0;
+        border: 2px solid #ff69b4;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      button {
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #ff1493;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gombalan Romantis</h1>
+    <div class="gombal" id="gombalText">
+      Cinta itu seperti angin, kamu tidak bisa melihatnya tapi kamu bisa
+      merasakannya.
+    </div>
+
+    <button onclick="tampilkanGombal()">Gombal Lagi!</button>
+
+    <script>
+      const gombalan = [
+        "Apa kamu seorang magician? Karena setiap kali aku melihatmu, semua yang lain menghilang.",
+        "Kamu itu seperti matahari, selalu membuat hariku lebih cerah.",
+        "Jika aku bisa mengatur ulang alfabet, aku akan menempatkan U dan I berdampingan.",
+        "Kamu pasti capek, karena kamu sudah berlari-lari di pikiranku seharian.",
+        "Apakah kamu percaya cinta pada pandangan pertama, atau aku harus lewat lagi?",
+      ];
+
+      function tampilkanGombal() {
+        const randomIndex = Math.floor(Math.random() * gombalan.length);
+        document.getElementById("gombalText").innerText = gombalan[randomIndex];
+      }
+    </script>
+  </body>
+</html>
